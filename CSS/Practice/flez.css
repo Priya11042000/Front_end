@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    
+}
+
