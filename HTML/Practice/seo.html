@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Tags & HTML vs HTML5</title>
+</head>
+
+<body>
+    <h2 id="doctype">Doctype :</h2>
+    <p>
+        The <b>doctype</b> tells the browser which version of HTML the webpage is using.
+        <br>If the doctype is not given, the browser renders in <i>quirks mode</i>.
+        <br>If the doctype is given, it renders in <i>standards mode</i>.
+    </p>
+    <ul>
+        <li>HTML (Old): Doctype is long and complex.</li>
+        <li>HTML5: Doctype is short and simple → <code>&lt;!DOCTYPE html&gt;</code></li>
+    </ul>
+
+    <hr>
+
+    <h2 id="lang">Lang Attribute :</h2>
+    <p>
+        The <b>lang</b> attribute is used to tell the browser which language the content is written in.
+        <br>Example: <code>&lt;html lang="en"&gt;</code>
+    </p>
+
+    <hr>
+
+    <h2 id="meta">Meta Tags :</h2>
+    <p>
+        Meta tags are placed inside the <b>&lt;head&gt;</b> section. <br>
+        They provide information about the webpage to browsers and search engines. <br>
+        Uses: SEO, social sharing, responsive design.
+    </p>
+
+    <ul>
+        <li><b>Charset :</b> Defines encoding of the page.<br>
+            Example: <code>&lt;meta charset="UTF-8"&gt;</code></li>
+        <li><b>Viewport :</b> Makes webpage responsive.<br>
+            Example: <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></li>
+        <li><b>Description :</b> Provides a summary of the webpage.<br>
+            Example: <code>&lt;meta name="description" content="Relevant content of webpage"&gt;</code></li>
+        <li><b>Keywords :</b> Defines keywords of the page (less used today).<br>
+            Example: <code>&lt;meta name="keywords" content="HTML, CSS, Web Development"&gt;</code></li>
+        <li><b>Author :</b> Defines the author of the page.<br>
+            Example: <code>&lt;meta name="author" content="Your Name"&gt;</code></li>
+    </ul>
+
+    <hr>
+
+    <h2 id="social">Social Media Meta Tags :</h2>
+    <h3>Open Graph (for Facebook, WhatsApp, Instagram)</h3>
+    <pre>
+&lt;meta property="og:title" content="Page Title"&gt;
+&lt;meta property="og:description" content="Page Description"&gt;
+&lt;meta property="og:image" content="image.jpg"&gt;
+&lt;meta property="og:url" content="https://example.com"&gt;
+    </pre>
+
+    <h3>Twitter Meta Tags</h3>
+    <pre>
+&lt;meta name="twitter:title" content="Page Title"&gt;
+&lt;meta name="twitter:description" content="Page Description"&gt;
+&lt;meta name="twitter:image" content="image.jpg"&gt;
+&lt;meta name="twitter:url" content="https://example.com"&gt;
+    </pre>
+
+    <hr>
+
+    <h2 id="comparison">Difference Between HTML & HTML5 :</h2>
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Feature</th>
+            <th>HTML (Old Versions)</th>
+            <th>HTML5 (Latest)</th>
+        </tr>
+        <tr>
+            <td>Doctype</td>
+            <td>Long & Complex</td>
+            <td>Simple: &lt;!DOCTYPE html&gt;</td>
+        </tr>
+        <tr>
+            <td>Media</td>
+            <td>Needed plugins like Flash</td>
+            <td>Built-in support with &lt;audio&gt; and &lt;video&gt;</td>
+        </tr>
+        <tr>
+            <td>Semantics</td>
+            <td>Mostly used &lt;div&gt;</td>
+            <td>Semantic tags (&lt;header&gt;, &lt;footer&gt;, &lt;article&gt;)</td>
+        </tr>
+        <tr>
+            <td>Storage</td>
+            <td>Cookies only</td>
+            <td>Local Storage & Session Storage</td>
+        </tr>
+        <tr>
+            <td>Graphics</td>
+            <td>No native graphics</td>
+            <td>&lt;canvas&gt; and SVG supported</td>
+        </tr>
+        <tr>
+            <td>Mobile Support</td>
+            <td>Limited</td>
+            <td>Responsive with viewport</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,35 +1,155 @@
 <html>
-    <head>
-        <title>Table in html</title>
-    </head>
-    <body>
-        <header>
-            <h2>Description of Table tags :</h2>
-            <p>A table is used to display data in rows and columns.</p>
-        </header>
-        <hr>
-        <main>
-            <h3>
-                Important tags in table :
-            </h3>
-            <section>
-                    <ol>
-                        <li>&lt; table &gt; : &nbsp; Defines a table.</li>
-                        <li>&lt; thead &gt; : &nbsp; Table header section (usually column headings).</li>
-                        <li>&lt; th &gt; : &nbsp;  Table header (bold & centered by default)
-                        <li>&lt; tbody &gt; : &nbsp; Table body section (main data rows).</li>
-                        <li>&lt; tr &gt; : &nbsp; Table row.</li>
-                        <li>&lt; td &gt; : &nbsp; Table data.</li>
-                        <li>&lt; tfoot &gt; : &nbsp; Table footer section, e.g : totals.</li>
-                    </ol>
-            </section>
-        </main>
+
+<head>
+    <title>Table in html</title>
+</head>
+
+<body>
+    <header>
+        <h2>Description of Table tags :</h2>
+        <p>A table is used to display data in rows and columns.</p>
+    </header>
+    <hr>
+    <main>
+        <h3>
+            Important tags in table :
+        </h3>
         <section>
-            <h3>Extra Attributes for &lt;table &gt; </table></h3>
+            <ol>
+                <li>&lt; table &gt; : &nbsp; Defines a table.</li>
+                <li>&lt; thead &gt; : &nbsp; Table header section (usually column headings).</li>
+                <li>&lt; th &gt; : &nbsp; Table header (bold & centered by default)
+                <li>&lt; tbody &gt; : &nbsp; Table body section (main data rows).</li>
+                <li>&lt; tr &gt; : &nbsp; Table row.</li>
+                <li>&lt; td &gt; : &nbsp; Table data.</li>
+                <li>&lt; tfoot &gt; : &nbsp; Table footer section, e.g : totals.</li>
+            </ol>
         </section>
-        <hr><hr>
-        <h2>Example for table</h2>
+    </main>
+    <section>
+        <h3>Extra Attributes for &lt;table &gt;</table>
+        </h3>
+        <ul>
+            <li>border="1" → Adds border</li>
+            <li>cellpadding → Space inside cells</li>
+            <li>cellspacing → Space between cells</li>
+            <li>colspan → Merge columns</li>
+            <li>rowspan → Merge rows</li>
+        </ul>
+    </section>
+    <hr>
+    <hr>
+    <h2>Example for table</h2>
+    <center>
+    <table border="1" cellpadding="8">
+        <thead>
+            <th>Attribute Name</th>
+            <th>Used In</th>
+            <th>Purpose</th>
+            <th>Example</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>href</td>
+                <td>&lt;a&gt; , &lt;link&gt; </td>
+                <td>Defines URL or resource path</td>
+                <td>&lt;a href="about.html"&gt;About&lt;/a&gt;</td>
+            </tr>
+            <tr>
+                <td>src</td>
+                <td>&lt;img&gt; , &lt;script&gt; , &lt;iframe&gt;</td>
+                <td>Source file path</td>
+                <td>&lt;img src="image.jpg"&gt;</td>
+            </tr>
+            <tr>
+                <td>alt</td>
+                <td>&lt;img&gt;</td>
+                <td>Alternate text if image doesn't load</td>
+                <td>&lt;img src="car.jpg" alt="red car"&gt;</td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Any element</td>
+                <td>Unique identifier for an element</td>
+                <td>&lt;p id="intro"&gt;Hello&lt;/p&gt;</td>
+            </tr>
+            <tr>
+                <td>class</td>
+                <td>Any element</td>
+                <td>Groups elements for styling</td>
+                <td>&lt;p class="highlight"&gt;Important&lt;/p&gt;</td>
+            </tr>
+            <tr>
+                <td>style</td>
+                <td>Any element</td>
+                <td>Applies inline CSS styling</td>
+                <td>&lt;p style="color:blue;"&gt;Hi&lt;/p&gt;</td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td>Any element</td>
+                <td>Tooltip text shown on hover</td>
+                <td>&lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt;</td>
+            </tr>
+            <tr>
+                <td>target</td>
+                <td>&lt;a&gt;</td>
+                <td>Opens link in same/new tab</td>
+                <td>&lt;a href="index.html" target="_blank"&gt;Open&lt;/a&gt;</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>&lt;form&gt;, &lt;input&gt;</td>
+                <td>Specifies name of form element</td>
+                <td>&lt;input type="text" name="username"&gt;</td>
+            </tr>
+            <tr>
+                <td>value</td>
+                <td>&lt;input&gt;, &lt;button&gt;</td>
+                <td>Sets default value</td>
+                <td>&lt;input type="text" value="Priya"&gt;</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>&lt;input&gt;</td>
+                <td>Specifies input type</td>
+                <td>&lt;input type="password"&gt;</td>
+            </tr>
+            <tr>
+                <td>placeholder</td>
+                <td>&lt;input&gt;</td>
+                <td>Shows hint text inside input box</td>
+                <td>&lt;input type="text" placeholder="Enter Name"&gt;</td>
+            </tr>
+            <tr>
+                <td>disabled</td>
+                <td>&lt;input&gt;, &lt;button&gt;</td>
+                <td>Makes element unclickable</td>
+                <td>&lt;button disabled&gt;Submit&lt;/button&gt;</td>
+            </tr>
+            <tr>
+                <td>checked</td>
+                <td>&lt;input type="radio"&gt;, &lt;input type="checkbox"&gt;</td>
+                <td>Marks option as selected</td>
+                <td>&lt;input type="checkbox" checked&gt; Option</td>
+            </tr>
+            <tr>
+                <td>readonly</td>
+                <td>&lt;input&gt;</td>
+                <td>Prevents editing field</td>
+                <td>&lt;input type="text" value="Read Only" readonly&gt;</td>
+            </tr>
+            <tr>
+                <td>maxlength</td>
+                <td>&lt;input&gt;</td>
+                <td>Limits number of characters</td>
+                <td>&lt;input type="text" maxlength="10"&gt;</td>
+            </tr>
+        </tbody>
+     
+    </table>
+</center>
 
+</body>
 
-    </body>
 </html>

@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>Media Tags </title>
+</head>
+
+<body>
+    <header>
+        <h1>Media Tags</h1>
+    </header>
+    <main>
+        <section>
+            <h3>1.Image tag:</h3>
+            <ul>
+                <li><strong>Tags : </strong>&lt;img src="image.jpg"&gt;</li>
+                <li><strong>Attributes :</strong> </li>
+                <ul>
+                    <li>src → Specifies the image source (path/URL).</li>
+                    <li>alt → Alternate text if the image cannot be displayed.</li>
+                    <li>width / height → Resize the image.</li>
+                </ul>
+            </ul>
+            <hr>
+            <hr>
+            <h3>2. Audio Tag</h3>
+            <ul>
+
+                <li><strong>Tags : </strong>
+                    &lt;audio controls&gt;<br>
+                    &lt;source src="song.mp3" type="audio/mpeg"&gt;<br>
+                    &lt;source src="song.ogg" type="audio/ogg"&gt;<br>
+                    Your browser does not support the audio element.<br>
+                    &lt;/audio&gt;
+                </li>
+                <li><strong>Attributes :</strong> </li>
+                <ul>
+                    <li>controls → Shows play, pause, volume controls.</li>
+                    <li>autoplay → Starts playing automatically.</li>
+                    <li>loop → Plays continuously.</li>
+                    <li>muted → Starts in muted mode.</li>
+                </ul>
+            </ul>
+            <hr>
+            <hr>
+            <h3>3. Video Tag</h3>
+            <ul>
+
+                <li><strong>Tags : </strong>
+                    &lt;video controls width="400" height="250"&gt;<br>
+                    &lt;source src="movie.mp4" type="video/mp4"&gt;<br>
+                    &lt;source src="movie.ogg" type="video/ogg"&gt;<br>
+                    Your browser does not support the video tag.<br>
+                    &lt;/video&gt;
+                </li>
+                <li><strong>Attributes :</strong> </li>
+                <ul>
+                    <li>controls → Shows video controls.</li>
+                    <li>autoplay → Plays automatically.</li>
+                    <li>loop → Repeats video continuously.</li>
+                    <li>muted → Starts in muted mode.</li>
+                    <li>width / height → Set dimensions</li>
+                    <li>poster → Displays an image before video starts.</li>
+                </ul>
+            </ul>
+            <hr>
+            <hr>
+            <h3>4. iFrame Tag</h3>
+            <ul>
+                <li><strong> Purpose :</strong> To embed another webpage (like YouTube, Google Maps, etc.) into your
+                    page.</li>
+                <li><strong>Tag : </strong>
+                    &lt;iframe src="https://www.example.com" width="600" height="400" frameborder="0"&gt;
+                    &lt;/iframe&gt;
+                </li>
+                <li><strong>Attributes :</strong> </li>
+                <ul>
+                    <li>src → URL of the webpage/video to embed.</li>
+                    <li>width / height → Set dimensions</li>
+                    <li>frameborder → Border thickness (0 = no border).</li>
+                </ul>
+                <li><strong>YouTube Example:</strong></li>
+                <li>Copy the Embed Code from YouTube → paste in HTML:</li><br>
+                &lt;iframe width="560" height="315"
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                frameborder="0" allowfullscreen&gt;
+                &lt;/iframe&gt;
+
+            </ul>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>
